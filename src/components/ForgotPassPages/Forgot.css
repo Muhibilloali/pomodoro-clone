@@ -1,0 +1,34 @@
+/* body {
+    background-color: rgb(186, 73, 73);
+}  */
+
+.form-forgot form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    /* margin-left: 670px; */
+    /* text-align: center;
+    align-content: center;
+    justify-content: center; */
+    /* margin-top: 50px; */
+    border: 1px solid #22222240;
+    background-color: #fff;
+    opacity: 0px;
+    border: 1px solid #22222240;
+}
+.form-forgot form  input {
+    background-color: rgb(217, 217, 217);
+    border: none;
+    
+}
+.create-account {
+    display: grid;
+    color: rgb(190, 190, 190);
+    font-size: 30px;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+
+}

@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: sans-serif;
+    }
+
+
+
+.all {
+    background-color: white;
+    width: 400px;
+    height: 900px;
+    overflow-y: scroll;
+    border-radius: 15px;
+    padding: 20px 0;
+    /* margin: 50px 0; */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}  
+
+.top {
+    text-align: center;
+    /* scroll-behavior: smooth; */
+}
+
+/* hr {
+    color: black;
+    background-color: red;
+} */
+
+.top p {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(175, 175, 175);
+}
+
+.top i {
+    cursor: pointer;
+    float: right;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: -28px;
+    margin-right: 18px;
+    color: rgb(175, 175, 175);
+}
+
+.timer i,
+p {
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 2px;
+}
+
+.timer {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.inputs {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.inputs p {
+    font-size: 14px;
+}
+
+.inputs input {
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(227, 225, 225);
+    padding-left: 10px;
+    margin-top: 2px;
+    padding-right: 6px;
+    color: rgb(69, 67, 67);
+}
+
+.min {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(95, 95, 95);
+}
+
+.onoff {
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.txt {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
+
+}
+
+.txt p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+    width: 200px;
+}
+
+#break {
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(227, 225, 225);
+    padding-left: 10px;
+    margin-left: 100px;
+    padding-right: 6px;
+    color: rgb(69, 67, 67);
+}
+
+.button-cover,
+.knobs,
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button {
+    position: relative;
+    width: 74px;
+    height: 36px;
+    overflow: hidden;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.button.r,
+.button.r .layer {
+    border-radius: 100px;
+}
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs {
+    z-index: 2;
+}
+
+.layer {
+    width: 100%;
+    background-color: #ebf7fc;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+#button-3 .knobs:before {
+    content: "On";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: #03a9f4;
+    border-radius: 50%;
+    transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-3 .checkbox:active+.knobs:before {
+    width: 46px;
+    border-radius: 100px;
+}
+
+#button-3 .checkbox:checked:active+.knobs:before {
+    margin-left: -26px;
+}
+
+#button-3 .checkbox:checked+.knobs:before {
+    content: "Off";
+    left: 40px;
+    background-color: #f44336;
+}
+
+#button-3 .checkbox:checked~.layer {
+    background-color: #fcebeb;
+}
+
+.task {
+    display: flex;
+    margin-left: 20px;
+    color: grey;
+    font-size: 20px;
+    margin-top: 20px;
+}

@@ -1,0 +1,81 @@
+body {
+    background-color:rgb(186, 73, 73);
+    display: grid;
+    justify-content: center;
+} 
+
+/* Hides the default red asterisk for required fields */
+input:required {
+    box-shadow: none; /* Removes any default browser shadow for required fields */
+    outline: none; /* Removes any default outline */
+  }
+  
+  /* Ensures that the input fields don't have red asterisks or any related styling */
+  input:invalid {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  /* Ensures the label styling does not add any default asterisks */
+  label:after {
+    content: none;
+  }
+  
+  
+
+.form-signin form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+
+    /* margin-left: 670px;
+    margin-top: 50px; */
+    border: 1px solid #22222240;
+    background-color: #fff;
+    opacity: 0px;
+    border: 1px solid #22222240;
+}
+.form-signin form  input {
+    background-color: rgb(217, 217, 217);
+    border: none;
+    
+}
+.create-account {
+    display: grid;
+    color: rgb(190, 190, 190);
+    font-size: 30px;
+    margin-bottom: 2px;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Photo-logo img {
+    width: 280px;
+    
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.with-google  {
+    border: 1px solid red;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #555;
+    padding: 5px;
+}
+.with-google  {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    color: grey;
+}
